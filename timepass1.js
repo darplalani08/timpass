@@ -462,6 +462,8 @@ print_grid([[" " for _ in range(4)] for _ in range(4)], 0)
   res.send(code);
 });
 
-app.listen(5000, () => {
-  console.log("chalu thai gyu");
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on ${PORT}`);
 });
